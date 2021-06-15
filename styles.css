@@ -26,6 +26,10 @@ body {
   background-color: #f7f7f7;
 }
 
+.bold {
+  font-weight: bolder;
+}
+
 .download-cv {
   position: fixed;
   top: 5%;
@@ -396,3 +400,5 @@ footer i:hover {
     width: 70%;
   }
 }
+
+
