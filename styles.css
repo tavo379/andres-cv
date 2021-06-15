@@ -367,7 +367,12 @@ footer i:hover {
 
   .personal-container,
   .experience-container,
-  .education-container {
+  .education-container,
+  .research-container,
+  .courses-container,
+  .competition-container,
+  .programming-container,
+  .languages-container {
     flex-direction: column;
   }
 
