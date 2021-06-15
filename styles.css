@@ -197,6 +197,91 @@ header::after {
  width: 70%;
 }
 
+.research-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.research-title {
+  width: 30%;
+}
+
+.research-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
+.courses-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.courses-title {
+  width: 30%;
+}
+
+.courses-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
+.competition-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.competition-title {
+  width: 30%;
+}
+
+.competition-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
+.programming-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.programming-title {
+  width: 30%;
+}
+
+.programming-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
+.languages-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.languages-title {
+  width: 30%;
+}
+
+.languages-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
 .border-left {
   border-left: 1px solid black;
   padding: 10px 30px;
