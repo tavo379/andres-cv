@@ -32,6 +32,8 @@ body {
   right: 5%;
   cursor: pointer;
   transition: all 0.2s linear;
+  text-decoration: none;
+  color: black;
   z-index: 100;
 }
 
@@ -337,7 +339,7 @@ footer i:hover {
     width: 80%;
   }
 
-  .download-cv {
+  .download-cv span {
     display: none;
   }
 
