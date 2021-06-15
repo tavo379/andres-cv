@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&family=Montserrat:wght@100;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #79ffe1;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+li {
+  list-style: square;
+}
+
+p {
+  line-height: 25px
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  background-color: #f7f7f7;
+}
+
+.download-cv {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  z-index: 100;
+}
+
+.download-cv a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.download-cv:hover {
+  color: #ffa000;
+  text-decoration: none;
+}
+
+.download-cv a:hover {
+  color: #ffa000;
+}
+
+
+.download-cv  i {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 600;
+  padding: 10px 30px;
+  font-family: 'Karantina', cursive;
+  letter-spacing: 15px;
+}
+
+h2 {
+  background-color: #ffa000;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 70%;
+}
+
+.icons {
+  position: relative;
+  right: 33px;
+  background: white;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s linear;
+}
+
+.info a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+  width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 160px;
+  grid-column-start:2;
+  padding: 10px 30px;
+  position: relative;
+}
+
+header span {
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.info {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+header::before {
+  background-color: black;
+  content: '';
+  position: absolute;
+  height: 30px;
+  top: 0;
+  display: block;
+  width: 1px;
+  left: -0;
+} 
+
+header::after {
+  background-color: black;
+  content: '';
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+  display: block;
+  width: 1px;
+  left: -0;
+} 
+
+.personal-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.resume-title {
+  width: 30%;
+}
+
+.resume-copy {
+  width: 70%;
+  padding: 10px 30px;
+}
+
+.experience-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.experience-title {
+  width: 30%;
+}
+
+.experience-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
+.education-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.education-title {
+  width: 30%;
+}
+
+.education-copy {
+ width: 70%;
+}
+
+.border-left {
+  border-left: 1px solid black;
+  padding: 10px 30px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  grid-column-start:2;
+  grid-row-start: 2;
+  height: 300px;
+  border-left: 1px solid black;
+}
+
+
+.profile-img {
+  position: absolute;
+  width: 200px;
+  right: 5%;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  filter: grayscale(1);
+  top: -20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+footer i {
+  padding: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  color: #000;
+}
+
+footer i:hover {
+  color: #ffa000;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .download-cv {
+    display: none;
+  }
+
+  .profile-card {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-img {
+    position: relative;
+    top: 20px;
+    left: auto;
+    order: -1;
+    margin-bottom: 20px;
+    right: 0;
+  }
+
+  h1 {
+    text-align: right;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .personal-container,
+  .experience-container,
+  .education-container {
+    flex-direction: column;
+  }
+
+  .copy {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main-container {
+    width: 80%;
+  }
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .main-container {
+    width: 70%;
+  }
+}
