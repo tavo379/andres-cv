@@ -173,7 +173,7 @@ header::after {
 .experience-container {
   grid-column-start:1;
   grid-column-end: 3;
-  grid-row-start: 4;
+  grid-row-start: 6;
   display: flex;
   margin: 50px 0px;
 }
@@ -190,7 +190,7 @@ header::after {
 .education-container {
   grid-column-start:1;
   grid-column-end: 3;
-  grid-row-start: 5;
+  grid-row-start: 9;
   display: flex;
   margin: 50px 0px;
 }
@@ -206,7 +206,7 @@ header::after {
 .research-container {
   grid-column-start:1;
   grid-column-end: 3;
-  grid-row-start: 6;
+  grid-row-start: 10;
   display: flex;
   margin: 50px 0px;
 }
@@ -220,10 +220,27 @@ header::after {
   padding: 10px 30px;
 }
 
-.courses-container {
+.certifications-container {
   grid-column-start:1;
   grid-column-end: 3;
   grid-row-start: 7;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.certifications-title {
+  width: 30%;
+}
+
+.certifications-copy {
+	width: 70%;
+  padding: 10px 30px;
+}
+
+.courses-container {
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 8;
   display: flex;
   margin: 50px 0px;
 }
@@ -240,7 +257,7 @@ header::after {
 .competition-container {
   grid-column-start:1;
   grid-column-end: 3;
-  grid-row-start: 8;
+  grid-row-start: 11;
   display: flex;
   margin: 50px 0px;
 }
@@ -257,7 +274,7 @@ header::after {
 .programming-container {
   grid-column-start:1;
   grid-column-end: 3;
-  grid-row-start: 9;
+  grid-row-start: 4;
   display: flex;
   margin: 50px 0px;
 }
@@ -274,7 +291,7 @@ header::after {
 .languages-container {
   grid-column-start:1;
   grid-column-end: 3;
-  grid-row-start: 10;
+  grid-row-start: 5;
   display: flex;
   margin: 50px 0px;
 }
@@ -332,6 +349,18 @@ footer i {
 }
 
 footer i:hover {
+  color: #ffa000;
+}
+
+
+.page-link{
+  font-weight: 700;
+  color: #000000;
+  transition: 200ms;
+}
+
+.page-link:hover{
+  font-weight: 700;
   color: #ffa000;
 }
 
