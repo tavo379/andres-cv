@@ -407,7 +407,8 @@ footer i:hover {
   .courses-container,
   .competition-container,
   .programming-container,
-  .languages-container {
+  .languages-container,
+  .certifications-container {
     flex-direction: column;
   }
 
