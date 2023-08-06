@@ -399,7 +399,7 @@
       </a>
     </div>
     <div class="see-more__container">
-      <span class="see-more">Ver más</span>
+      <span class="see-more">See more</span>
     </div>
     <footer>
       <a
@@ -428,15 +428,32 @@
     ></script>
     <script>
       document.querySelector('.see-more').addEventListener('click', function() {
-          let projects = document.querySelectorAll('.project');
-          
-          projects.forEach(function(project) {
-              project.style.display = 'block';
-          });
-
-          // Opcional: Oculta el botón de "Ver más" una vez que se hayan mostrado todos los proyectos
-          document.querySelector('.see-more__container').style.display = 'none';
+          toggleProjectShow();
       });
+
+      function toggleProjectShow() {
+        var x = document.querySelector('.see-more');
+        let projects = document.querySelectorAll('.project');
+        let counter= 0;
+
+        if (x.innerHTML === "See more") {
+          projects.forEach(function(project) {
+            if (counter>=3){
+              project.style.display = 'block';
+            }
+            counter++;
+          });
+          x.innerHTML = "See Less";
+        } else {
+          projects.forEach(function(project) {
+            if (counter>=3){
+              project.style.display = 'none';
+            }
+            counter++;
+          });
+          x.innerHTML = "See more";
+        }
+      }
     </script>
   </body>
 </html>
