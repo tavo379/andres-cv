@@ -253,7 +253,125 @@
           </p>
         </div>
       </div>
+    </div>
+    <h2 class="projects__title main-container">Portfolio</h2>
+    <div class="projects main-container">
+      <div class="project">
+        <div class="project__header">
+          <img src="./images/ascendia-pharma.png" alt="ascendia pharma">
+        </div>
+        <div class="project__body">
+          <h2 class="project__title">Title</h2>
+          <div class="tags">
+            <ul>
+              <li>hubspot</li>
+              <li>html</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <p class="project__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, corrupti. Reiciendis perspiciatis recusandae, illum quas autem dolorum asperiores quasi, quod accusantium fuga distinctio debitis nisi facere fugiat sunt obcaecati omnis!
+          </p>
+        </div>
+      </div>
 
+      <div class="project">
+        <div class="project__header">
+          <img src="./images/ascendia-pharma.png" alt="ascendia pharma">
+        </div>
+        <div class="project__body">
+          <h2 class="project__title">Title</h2>
+          <div class="tags">
+            <ul>
+              <li>hubspot</li>
+              <li>html</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <p class="project__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, corrupti. Reiciendis perspiciatis recusandae, illum quas autem dolorum asperiores quasi, quod accusantium fuga distinctio debitis nisi facere fugiat sunt obcaecati omnis!
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__header">
+          <img src="./images/ascendia-pharma.png" alt="ascendia pharma">
+        </div>
+        <div class="project__body">
+          <h2 class="project__title">Title</h2>
+          <div class="tags">
+            <ul>
+              <li>hubspot</li>
+              <li>html</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <p class="project__description">
+            quod accusantium fuga distinctio debitis nisi facere fugiat sunt obcaecati omnis!
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__header">
+          <img src="./images/ascendia-pharma.png" alt="ascendia pharma">
+        </div>
+        <div class="project__body">
+          <h2 class="project__title">Title</h2>
+          <div class="tags">
+            <ul>
+              <li>hubspot</li>
+              <li>html</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <p class="project__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, corrupti. Reiciendis perspiciatis recusandae, illum quas autem dolorum asperiores quasi, quod accusantium fuga distinctio debitis nisi facere fugiat sunt obcaecati omnis!
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__header">
+          <img src="./images/ascendia-pharma.png" alt="ascendia pharma">
+        </div>
+        <div class="project__body">
+          <h2 class="project__title">Title</h2>
+          <div class="tags">
+            <ul>
+              <li>hubspot</li>
+              <li>html</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <p class="project__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, corrupti. Reiciendis perspiciatis recusandae, illum quas autem dolorum asperiores quasi, quod accusantium fuga distinctio debitis nisi facere fugiat sunt obcaecati omnis!
+          </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__header">
+          <img src="./images/ascendia-pharma.png" alt="ascendia pharma">
+        </div>
+        <div class="project__body">
+          <h2 class="project__title">Title</h2>
+          <div class="tags">
+            <ul>
+              <li>hubspot</li>
+              <li>html</li>
+              <li>react</li>
+            </ul>
+          </div>
+          <p class="project__description">
+            quod accusantium fuga distinctio debitis nisi facere fugiat sunt obcaecati omnis!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="see-more__container">
+      <span class="see-more">Ver más</span>
     </div>
     <footer>
       <a
@@ -280,5 +398,17 @@
       src="https://kit.fontawesome.com/e50895d2bd.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.querySelector('.see-more').addEventListener('click', function() {
+          let projects = document.querySelectorAll('.project');
+          
+          projects.forEach(function(project) {
+              project.style.display = 'block';
+          });
+
+          // Opcional: Oculta el botón de "Ver más" una vez que se hayan mostrado todos los proyectos
+          document.querySelector('.see-more__container').style.display = 'none';
+      });
+    </script>
   </body>
 </html>
