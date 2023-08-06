@@ -452,12 +452,12 @@ footer i:hover {
 }
 
 .project__title {
-  background-color: inherit;
+  text-align: center;
   color: #000;
   font-size: 1.8em;
   height: fit-content;
   letter-spacing: normal;
-  padding: 0;
+  padding: 10px 40px;
   margin-bottom: 20px;
 }
 
@@ -469,6 +469,44 @@ footer i:hover {
   grid-template-rows: 1fr 2fr;
   transition: all 0.2s linear;
   display: none;
+  color:#000;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.project:hover{
+  filter: blur(0px);
+}
+
+.project:hover::after{
+  content:"";
+  display: block;
+  background-color: #00000020;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.project:hover::before{
+  content:"GO!";
+  display: block;
+  background-color: #ffa000;
+  filter: blur(0px);
+  position: absolute;
+  z-index: 4;
+  bottom: 0%; 
+  left: 0%;
+  margin: 0 auto;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .project:nth-child(-n+3) {
@@ -476,7 +514,7 @@ footer i:hover {
 }
 
 .project:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
 }
 
 .project__header {
@@ -484,17 +522,19 @@ footer i:hover {
 }
 
 .project__body {
-  padding: 40px 20px;
+  padding: 0px;
 }
 
 .project__description {
   font-size: 0.8em;
+  padding: 0px 40px 20px
 }
 
 .projects img {
   margin: 0 auto;
   object-fit: cover;
   width: 100%;  
+  max-height:150px;
 }
 
 .see-more__container {
@@ -514,6 +554,10 @@ footer i:hover {
   grid-column: 2;
 }
 
+.tags{
+  padding: 0px 40px 0px
+}
+
 .tags ul {
   display: flex;
   flex-wrap: wrap;
@@ -526,5 +570,6 @@ footer i:hover {
   font-weight: 700;
   list-style: none;
   margin-right: 10px;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
