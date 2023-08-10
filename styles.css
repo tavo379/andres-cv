@@ -582,4 +582,7 @@ footer i:hover {
   .section-title{
     text-align: left;
   }
+  body a{
+    min-height: 50px !important;
+  }
 }
