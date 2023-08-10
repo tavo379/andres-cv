@@ -573,3 +573,13 @@ footer i:hover {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width:900px){
+  .resume-title, .experience-title, .research-title, .certifications-title, .courses-title, .competition-title, .programming-title, .languages-title {
+    width: 100%;
+    
+  }
+  .section-title{
+    text-align: left;
+  }
+}
